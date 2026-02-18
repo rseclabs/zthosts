@@ -33,10 +33,6 @@ examples:
 API token:
   Get your ZeroTier Central API token at https://my.zerotier.com/account
   Provide it via -t/--token or the ZTNET_API_TOKEN environment variable.
-kriley@E-L11-900022:~/ai-sessions/zthosts$ ls
-README.md  zt-hosts  zthosts.py
-kriley@E-L11-900022:~/ai-sessions/zthosts$ cat README.md
-# zthosts
 
 A Python CLI tool that generates Linux-compatible hosts file entries from your ZeroTier network members. It queries the ZeroTier Central API, lets you pick a network, and outputs a ready-to-use hosts file mapping each member's ZeroTier IP to its name.
 
@@ -178,8 +174,8 @@ Members with no name set or no IP assignments are skipped.
 | No networks found | Prints informational message, exits with code 1 |
 | Network timeout | 10-second timeout on all API requests |
 | No qualifying members | Writes a hosts file with the header but no entries |
-kriley@E-L11-900022:~/ai-sessions/zthosts$ cat zthosts.py
-#!/usr/bin/env python3
+
+                                                                 #!/usr/bin/env python3
 """zthosts - Generate Linux hosts file entries from ZeroTier network members."""
 
 import os
